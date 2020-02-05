@@ -1,0 +1,830 @@
+/******* GENERAL ***********/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Lato:300i|Montserrat:300i|Oswald&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.mg-0 {
+    margin: 0 auto;
+}
+.mg-20-t {
+    margin-top: 20px;
+}
+.mg-20-b {
+    margin-bottom: 20px;
+}
+.mg-20 {
+    margin: 20px 0;
+}
+.mg-50-t {
+    margin-top: 50px;
+}
+.mg-50-b {
+    margin-bottom: 50px;
+}
+.mg-50 {
+    margin: 50px 0;
+}
+.mg-80-t {
+    margin-top: 80px;
+}
+.mg-80-b {
+    margin-bottom: 80px;
+}
+.mg-80 {
+    margin: 80px 0;
+}
+.pd-10-t {
+    padding-top: 10px;
+}
+.pd-10-b {
+    padding-bottom: 10px;
+}
+.pd-10 {
+    padding: 10px 0;
+}
+.pd-20-t {
+    padding-top: 20px;
+}
+.pd-20-b {
+    padding-bottom: 20px;
+}
+.pd-20 {
+    padding: 20px 0;
+}
+.pd-50-t {
+    padding-top: 50px;
+}
+.pd-50-b {
+    padding-bottom: 50px;
+}
+.pd-50 {
+    padding: 50px 0;
+}
+.pd-80-t {
+    padding-top: 80px;
+}
+.pd-80-b {
+    padding-bottom: 80px;
+}
+.pd-80 {
+    padding: 80px 0;
+}
+.pd-10 {
+    padding-top: 10%
+}
+.fa-2 {
+    font-size: 24px;
+}
+.link_url {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.no_padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.no_padding_left {
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.white {
+    color: #fff;
+}
+.img_width {
+    width: 100%;
+}
+.img_belen{
+width:400px;
+height:713px;	
+}
+
+.clearfix{
+    clear: both;
+}
+/****** NAV MENU ***************/
+
+.navbar-brand img {
+    max-height: 50px;
+}
+.navbar-default {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-default .navbar-nav > li {
+    background-color: transparent;
+    border-radius: 10px;
+    color: #337ab7;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+}
+.navbar-default .navbar-nav > li:hover {
+    color: #337ab7;
+}
+
+.navbar-default .navbar-nav > li > .admision-menu {
+    background-color: #d9534f;
+    border-radius: 10px;
+    color: #fff;
+    margin: 2px;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+}
+.navbar-default .navbar-nav > li > .admision-menu:hover {
+    background-color: #c9302c;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > .admision-menu2 {
+    background-color: #00568c;
+    border-radius: 10px;
+    color: #fff;
+    margin: 2px;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+}
+.navbar-default .navbar-nav > li > .admision-menu2:hover {
+    background-color: #1A50EA;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/********* INDEX PRIMERA SECCION *************/
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    /* For at least Firefox */
+    min-height: 100%;
+}
+.cover-container {
+    margin: 0 auto;
+}
+
+/***** 1. INDEX - VIDEO BCK ****/
+
+.video_index {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*min-width: 100%;
+    min-height: 100%;*/
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('../images/fondovideo.jpg') no-repeat;
+    background-size: cover;*/
+    transition: 1s opacity;
+}
+.stopfade {
+    opacity: .5;
+}
+.video-overlay {
+    background-image: url(../images/dots.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    background-repeat: repeat;
+}
+.experiencia_cover h1 {
+    padding-top:35%;
+    font-size: 30px;
+    color: #474743;
+    font-family: 'Amaranth', sans-serif;
+    text-shadow: 1px 1px #ffffff;
+}
+.experiencia_cover h3 {
+    padding-top:90%;
+    font-size: 15px;
+    color: #474743;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.experiencia_cover h4 {
+    padding-top:90%;
+    font-size: 12px;
+    color: #474743;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.optiontb {
+    list-style: none;
+    display: block;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.smart {
+    background-position: center;
+    background-size: cover;
+}
+.tablet {
+    background-position: center;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+}
+.experiencia {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: rgb(255, 140, 55);
+}
+
+/******** 2. INDEX SECTION *****/
+
+.margin_border {
+    margin: 0px;
+    background: rgba(0, 0, 0, .4)
+}
+.margin_bck {
+    margin: 20 0px;
+    background: rgba(0, 0, 0, .2);
+}
+.nuestro-colegio {
+    min-height: 400px;
+    display: table;
+}
+.index_text_colegio {
+    display: table-cell;
+    vertical-align: middle;
+}
+.index_niveles {
+    background-color: #f5f5f5;
+}
+.index_niveles .margin_border {
+    margin: 20px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: 0.75;
+}
+.index_niveles .index_text {
+    height: 300px;
+}
+.index_section {
+    background-color: #286090;
+}
+.index_section a:hover,
+.index_niveles a:hover {
+    text-decoration: none;
+}
+.index_natacion {
+    background-image: url(../images/indexnatacion.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding: 0px;
+}
+.index_talleres {
+    background-image: url(../images/indextalleres.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding: 0px;
+}
+.index_inicial {
+    background-image: url(../images/indexinicial.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.index_primaria {
+    background-image: url(../images/indexprimaria.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.index_secundaria {
+    background-image: url(../images/indexsecundaria.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.index_sections .margin_border:hover {
+    background: rgba(0, 0, 0, .2);
+}
+.index_text {
+    height: 400px;
+    display: table;
+    margin: 0 auto;
+}
+.index_text h1 {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    opacity: .6;
+}
+.section-promo {
+    background-color: #f5f5f5;
+}
+.section-promo img {
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+.section-promo img:hover {
+    opacity: 0.7;
+}
+
+/************** FOOTER*******************/
+#footer{
+    background-color: rgb(241, 105, 13);
+}
+
+.enlaces {
+    color: #fff;
+}
+.enlaces i {
+    color: #fff;
+    padding-right: 10px;
+}
+.enlaces ul {
+    list-style: none;
+    padding-left: 5px;
+}
+.enlaces a {
+    color: #fff;
+}
+.callcenter {
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background-color: #337ab7;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+.callcenter a i {
+    font-size: 14px;
+    color: #fff;
+}
+
+/******** CARROUSEL FULL ******/
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/******** PAGINAS ***********/
+
+.menu_levels_ul {
+    list-style: none;
+}
+.menu_levels_ul li {
+    float: left;
+}
+
+/**************************/
+
+.image-arte {
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/workshop.jpg');
+    display: table;
+}
+.image-arte-txt {
+    display: table;
+    min-height: 600px;
+}
+.image-arte-txt h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.image-arte-txt h1 span {
+    font-weight: 700;
+}
+
+/*@media (min-width: 992px) {
+    .image-arte-txt {
+        background-color: #82358B;
+    }
+    .image-arte {
+       
+    }
+}
+@media screen and (max-width: 991px) {
+    .image-arte {
+        background-image: url('../images/workshop2.jpg');
+    }
+}*/
+
+.image-virtual {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.image-virtual-txt h2 {
+    color: #fff;
+    font-size: 42px;
+}
+.image-virtual-txt h1 {
+    color: #fff;
+    font-weight: 400;
+}
+.image-virtual-txt {
+    background-color: #126ac5;
+}
+@media (min-width: 992px) {
+    .image-virtual {
+        background-image: url('../images/virtual.jpg');
+    }
+}
+.matricula {
+    min-height: 400px;
+    background-image: url('../images/matricula.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/********* VIDEO PAGES ********/
+
+.video {
+    width: 450px;
+    height: 315px;
+}
+@media screen and (max-width: 600px) {
+    .video {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+/********* SLIDESHOW ************/
+
+#slideshow {
+    min-height: 500px;
+}
+#slideshow img {
+    width: 100%;
+}
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+.movilidad {
+    position: relative;
+}
+
+/**************VIDEO SECTION**************/
+
+.video-landing {
+    height: 500px;
+    position: relative;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.video-landing video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+}
+.video-landing h1 {
+    font-size: 3em;
+}
+.video-landing-txt {
+    display: table;
+    min-height: 500px;
+}
+.video-landing-txt h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+    text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.5);
+}
+.video-landing-txt h1 span {
+    font-weight: 700;
+}
+
+/***********/
+
+.nav_top {
+    color: #fff;
+}
+.nav_top a {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+}
+.nav_top i {
+    font-size: 16px;
+}
+@media (min-width: 992px) {
+    .gt_focus_right {
+        float: right;
+    }
+}
+
+/*************/
+
+.contactohtml {
+    background-image: url(../images/contactohtml.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: top;
+}
+.sistemahtml {
+    background-image: url(../images/sistemahtml.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: top;
+}
+.serviciohtml {
+    background-image: url(../images/serviciohtml.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: top;
+}
+.infrahtml {
+    background-image: url(../images/infrahtml.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: top;
+}
+.prensahtml {
+    background-image: url(../images/prensahtml.jpg);
+    background-size: cover;
+    color: #fff;
+    background-position: top;
+}
+.sistema1 {
+    background-image: url(../images/sistema1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 472px;
+}
+.html5-social {
+    overflow: hidden;
+    top: 0px;
+}
+.f-bree {
+    font-family: 'Bree Serif', serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/********* gallery*************/
+
+.img-gal {
+    opacity: 0.8;
+    background: black;
+}
+.img-gal:hover {
+    opacity: 1;
+}
+.img-gal img {
+    width: 100%;
+}
+.inicial3 {
+    background-image: url(../images/inicialgal.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0px;
+    color: #fff;
+}
+
+/********** 3anos*****************/
+
+.index_hover:hover .img_width {
+    opacity: 0.15;
+}
+.index_hover .index_hover_section {
+    display: none;
+}
+.index_hover:hover .index_hover_section {
+    display: block;
+    position: absolute;
+    top: 30%;
+    padding-right: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+.index_hover:hover h3 {
+    display: block;
+    width: 100%;
+}
+
+/*********** opiniones ***********/
+
+.opiniones {
+    color: #fff;
+    background-image: url(../images/opiniones.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: transparent;
+    border: none;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: transparent;
+    border: none;
+}
+
+/********** prensa *********/
+
+.prensa_slider .carousel-caption {
+    bottom: 40px;
+}
+.prensa_inicio {
+    margin-top: 115px;
+}
+.prensa_slider {
+    height: 500px;
+    padding: 2px;
+}
+.prensa_slider h1 {
+    font-size: 4em;
+}
+.prensa_slider h3 {
+    font-weight: 400;
+}
+.prensa_btn {
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.carousel-indicators li {
+    margin: 5px;
+    padding: 5px;
+}
+.carousel-indicators .active {
+    margin: 5px;
+}
+.prensa_s {
+    height: 250px;
+    padding: 2px;
+}
+.prensa_s_img {
+    height: 246px;
+    background-size: cover;
+    background-position: center;
+}
+.prensa_s_txt {
+    padding: 80px 10px 0px 10px;
+    color: #fff;
+}
+.prensa_s_txt a {
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: none;
+}
+.prensa_s_img:hover a {
+    display: inline-block;
+}
+.perso .personas_n h3 {
+    padding: 20px 0px 10px 0px;
+    color: #ccc;
+    margin: 0px;
+}
+.personas_n h4 {
+    padding-bottom: 5px;
+    color: #dbdbdb;
+    margin: 0px;
+}
+.youtube {
+    background-size: cover;
+    background-image: url(../images/prensa/youtube.jpg);
+    background-position: center;
+    color: #fff;
+}
+.seccion_prensa_2 a {
+    color: #fff;
+}
+
+.personas_label h3{
+    margin: 0;
+}
+.personas_label{
+    padding: 10px 0px;
+    color: #fff;
+}
+/************** infraestructura **********/
+
+.sub_h {
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/********* footer *********/
+#footer{
+    background-position: center;
+    background-size: cover;
+    /*background-color: rgb(241, 105, 13);*/
+    background-color: #F17B4E;
+
+    color: #fff;
+}
+
+#footer a{
+    color: #fff;
+}
+.block_footer{
+border-radius: 5px;
+    color: #fff;
+}
+.block_footer h3{
+    text-decoration: underline;
+}
+
+.block_footer li{
+    list-style: square;
+}
+.block_footer li a{
+    color: #fff;
+    text-decoration: none;
+}
+.block_footer li a:hover{
+    text-decoration: underline;
+}
+.footer-wrap{
+    
+    color: #fff;
+}
+/**************/
+.padresintranet{
+    list-style: none;
+    padding-left: 0px;
+}

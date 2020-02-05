@@ -1,0 +1,317 @@
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --><meta name="description" content=""><meta name="author" content="">
+	<title>ALUMNI</title>
+	<link href="./images/logo.png" rel="shortcut icon" type="image/x-icon" /><!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link href="css/carousel.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function() {
+            var txt = "<h1>Tus talentos y habilidades irán mejorando<br />";
+            txt = txt + "con el tiempo, pero para eso<br />";
+            txt = txt + "has de empezar</br>(Martin Luther King)</h1>";
+
+            var txt2 = "<h3>Tus talentos y habilidades irán mejorando<br />";
+            txt2 = txt2 + "con el tiempo, pero para eso<br />";
+            txt2 = txt2 + "has de empezar</br>(Martin Luther King)</h3>";
+
+            var wi =  $(window).width();
+                if (wi > 769){
+                    $("#texto_central").html(txt);
+                } else {
+                    $("#texto_central").html(txt2);            
+                }
+            
+            $(window).resize(function() {
+                var wi =  $(window).width();
+                if (wi > 769){
+                    $("#texto_central").html(txt);
+                } else {
+                    $("#texto_central").html(txt2);            
+                }
+                
+            });
+            
+        });
+
+        function EnviarMensaje(){
+            console.log("correo",$("#correo").val());
+            console.log("nombre",$("#nombre").val());
+            console.log("mensaje",$("#mensaje").val());
+
+            if($("#correo").val()!="" && $("#nombre").val() && $("#mensaje").val()){
+                $.post("public/controler/usuario.php", {
+                    accion: "47",
+                    nombre: $("#nombre").val(),
+                    correo: $("#correo").val(),
+                    mensaje: $("#mensaje").val()
+                }, function(data){
+                    if(data!=""){
+                        alert("Mensaje enviado");
+                    }
+                    
+                    $("#nombre").val("");
+                    $("#correo").val("");
+                    $("#mensaje").val("");
+
+                });
+            } else {
+                alert("Por favor, verifique datos ingresados");
+            }
+        }
+
+    </script>
+
+    <style>
+
+        .burbuja{
+			background-image: url("https://img.icons8.com/cotton/64/000000/message-preview.png");
+			position: fixed;
+            width: 64px;
+            height: 64px;
+			bottom: 50px;
+			right: 50px;
+			z-index: 5;
+		}
+
+    </style>
+</head>
+<body style="overflow-x: hidden; ">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Ir a</span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img alt="" class="visible-lg visible-md" src="images/logo.png" /> 
+                <img alt="" class="hidden-md hidden-lg" src="images/logo.png" /></a>
+            </div>
+
+            <div aria-expanded="false" class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">¿Quiénes somos?<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="somos.html">Conócenos</a></li>
+                            <li><a href="perfil.html">Perfil del asesor</a></li>
+                            <!--<li><a href="santo.html">Santo Domingo</a></li>-->
+                        </ul>
+                    </li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a class="admision-menu" href="public/view/inicio.html">Registro</a></li>
+                    <li><a class="admision-menu2" href="public/view/login.html">Iniciar sesión</a></li>
+                    
+                </ul>
+                <!--<div class="dropdown">
+                        <button class="dropbtn">¿QUIENES SOMOS?</button>
+                        <div class="dropdown-content">
+                            <a href="somos.html">Conocenos</a>
+                            <a href="perfil_asesor.html">Perfil del asesor</a>
+                        </div>
+                    </div>-->
+            </div>
+        
+        </div>
+    </nav>
+    
+</header>
+
+<div class="site-wrapper experiencia_cover">
+    <div style="width: 100%; padding-top:10%">
+        <video autoplay="" class="video_index" id="bgvid" loop="" muted="" playsinline="">
+            <source src="videos/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <div class="container " style="padding-top:10%">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="texto_central"></div>
+                <!--<h3>Tus talentos y habilidades irán mejorando<br />
+                    con el tiempo, pero para eso<br />
+                    has de empezar (Martin Luther King)</h3>-->
+                <div class="mg-50-t"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid pd-50-t pd-50-b bggray" style="background-color: #f9f9f9;">
+    
+    <div class="row">
+        <div class="container nuestro-colegio">
+            <div class="col-md-5 col-md-push-7 text-center mg-50-t mg-50-b">
+                <img alt="Generic placeholder image" height="250" src="images/logo.png" width="250" />
+            </div>
+
+            <div class="col-md-7 col-md-pull-5 text-justify pd-50-t mg-20-t visible-md visible-lg">
+                <h2>ALUMNI</h2>
+
+                <p class="mg-20-t">Un programa dedicado a potenciar la educación escolar generando una red de intercambio de conocimiento con universitarios</p>
+                <p class="mg-20-t">Nuestro compromiso es brindar asesorías del más alto nivel que se adecuen a las aptitudes y oportunidades de cada alumno</p>
+
+                <div class="col-xs-12 visible-sm visible-xs text-center mg-50-b">
+                    <h2>ALUMNI</h2>
+
+                    <p class="mg-20-t">Un programa dedicado a potenciar la educación escolar generando una red de intercambio de conocimiento con universitarios</p>
+                    <p class="mg-20-t">Nuestro compromiso es brindar asesorías del más alto nivel que se adecuen a las aptitudes y oportunidades de cada alumno</p>
+                    <button class="btn btn-primary" style="margin-right:5px" type="button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pd-50-t pd-50-b">
+    
+    <div class="container">
+        <div class="col-md-3 col-sm-6 btn-danger text-center pd-20-t">
+            <a href="programas.html"><img alt="" src="images/indexicon3.png" /></a>
+            
+            <h3 class="f-bree pd-20-b">
+                <a href="programas.html">
+                    <span style="color:#FFFFFF;">ADELANTO DE CURSOS</span>
+                </a>
+            </h3>
+            <a href="programas.html"> </a>
+            
+        </div>
+        <div class="col-md-3 col-sm-6 btn-primary text-center pd-20-t">
+            <a href="programas.html"><img alt="" src="images/indexicon1.png" /></a>
+            
+            <h3 class="f-bree pd-20-b">
+                <a href="programas.html">
+                    <span style="color:#FFFFFF;">NIVELACIÓN DE CURSOS</span>
+                </a>
+            </h3>
+            <a href="programas.html"> </a>
+            
+        </div>
+        <div class="col-md-3 col-sm-6 btn-warning text-center pd-20-t">
+                <a href="programas.html"><img alt="" src="images/indexicon3.png" /></a>
+            
+            <h3 class="f-bree pd-20-b">
+                <a href="programas.html">
+                    <span style="color:#FFFFFF;">APOYO CON TAREAS</span>
+                </a>
+            </h3>
+            <a href="programas.html"> </a>
+            
+        </div>
+        <div class="col-md-3 col-sm-6 btn-success text-center pd-20-t">
+                <a href="programas.html"><img alt="" src="images/indexicon1.png" /></a>
+            
+            <h3 class="f-bree pd-20-b">
+                <a href="programas.html">
+                    <span style="color:#FFFFFF;">REFUERZO PARA EXAMENES</span>
+                </a>
+            </h3>
+            <a href="programas.html"> </a>
+            
+        </div>
+        
+    </div>
+</div>
+
+<a href="" data-toggle="modal" data-target="#modal_mensaje"><div class="burbuja"></div></a>
+<div id="modal_mensaje" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <center><h6 class="font-weight-semibold">ENVIANOS UN MENSAJE</h6></center>
+                <input id="nombre" type="text" style="border-radius: 15px; width: 100%; margin: 5px; background-color: #E5F7F3;" placeholder="   NOMBRE"><br>
+                <input id="correo" type="text" style="border-radius: 15px; width: 100%; margin: 5px; background-color: #E5F7F3;" placeholder="   CORREO"><br>
+                <textarea id="mensaje" style="border-radius: 15px; width: 100%; height: 150px; margin: 5px; background-color: #E5F7F3;" placeholder="   MENSAJE"></textarea>
+            
+                
+            </div>
+
+            <div class="modal-footer">
+                <button onclick="EnviarMensaje()" type="button" class="btn btn-primary" data-dismiss="modal">ENVIAR</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="pd-20-t" id="footer">
+    <div class="container text-center">
+        <div class="footer-wrap">
+            <div class="col-md-4 ">
+                <a href="index.html"><img src="images/logo2.png" style="width: 80%;"></a>    
+                
+                <p class="mg-20-t">Somos un programa dedicado a potenciar la educación escolar generando una red de intercambio de conocimiento con universitarios</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="copy-text">
+                    <h3><p>INFORMACIÓN DE CONTACTO</p></h3>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="width: 25px;">
+                                    <img src="https://img.icons8.com/material/24/000000/gmail.png">
+                                </div>
+                            </td>
+                            <td>
+                               <div style="margin-left: 8px; margin-bottom: 18px;">Para mayor información contáctenos en <a href="mailto:alumniasesorias@gmail.com">: alumniasesorias@gmail.com</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="margin-top: 18px; width: 25px;">
+                                    <img src="https://img.icons8.com/material-outlined/24/000000/phone-office.png">
+                                </div>
+                            </td>
+                            <td>
+                               <div style="margin-left: 8px; margin-top: 18px;">Llamarnos a: <a href="tel:+51995552908">995552908</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                        
+                
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="copy-text">
+                    <h3><p>RED ALUMNI</p></h3>
+                    <br>
+                    <a href="public/view/inicio2.html"><button class="btn btn-primary" style="width: 80%; color:black;" >POSTULA AQUI</button></a>
+                    <br><br><br>
+                    <a href="public/view/login.html"><button class="btn btn-primary"  style="width: 80%; color:black;" >INICIAR SESIÓN</button class="btn btn-primary"></a>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/html5lightbox.js"></script><script src="js/sda.js"></script><!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script type="text/javascript">
+window.onload = function() {
+    var N = navigator.appName,
+        ua = navigator.userAgent,
+        tem;
+    var M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+    if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1];
+    M = M ? [M[1], M[2]] : [N, navigator.appVersion, "-?"];
+    
+    
+}
+</script></div>
+</div>
+</body>
+</html>

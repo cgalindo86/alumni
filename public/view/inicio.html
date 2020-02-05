@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="../../images/logo.png" rel="shortcut icon" type="image/x-icon" /><!-- Bootstrap core CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>ALUMNI - Inscripción de padres</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="global_assets/js/main/jquery.min.js"></script>
+	<script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="global_assets/js/plugins/ui/ripple.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="global_assets/js/plugins/forms/validation/validate.min.js"></script>
+	<script src="global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="global_assets/js/demo_pages/login_validation.js"></script>
+	<!-- /theme JS files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="application/javascript" src="../controler/inicio.js"></script>
+
+	<link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
+	<script src='fullcalendar/packages/core/main.js'></script>
+	<script src='fullcalendar/packages/interaction/main.js'></script>
+	<script src='fullcalendar/packages/daygrid/main.js'></script>
+	<script src='fullcalendar/packages/core/locales/es.js'></script>
+	<style>
+		#tema{
+			/*background-image: 'imagenes/fondo.jpg';*/
+			background: cadetblue;
+
+		}
+	</style>
+</head>
+
+<body id="tema">
+
+	
+	<!-- Page content -->
+	<div class="page-content login-cover">
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Content area -->
+		<div class="card" style="margin:5%;">
+			
+			<div class="card">
+				<div id="padres1" class="card">
+
+					<!-- Form -->
+						<center><img src="../../images/logo2.png" style="width: 20%; margin-top: 10px;"></center>
+						
+						<div class="text-center mb-3">
+							<!--<img src="imagenes/lima.jpg" class="card-img">-->
+							<h5 class="mb-0">REGISTRO DEL PADRE</h5>
+							<span class="d-block text-muted">Llene los campos requeridos</span>
+						</div>
+
+						<div class="form-group text-center text-muted content-divider">
+							<span class="px-2">Datos del padre</span>
+						</div>
+						<table style="width:100%;">
+							<tr style="width:100%;">
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="text" id="pnombre" class="form-control" placeholder="Nombres" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+			
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="text" id="papellidos" class="form-control" placeholder="Apellidos" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+			
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="number" id="pdocumento" class="form-control" placeholder="Documento de identidad" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="password" id="ppassword" class="form-control" placeholder="Contraseña" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-lock text-muted"></i>
+										</div>
+									</div>
+			
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="password" id="ppassword2" class="form-control" placeholder="Repetir contraseña" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-lock text-muted"></i>
+										</div>
+									</div>
+			
+									<!--<div class="form-group text-center text-muted content-divider">
+										<span class="px-2">Datos de contacto</span>
+									</div>-->
+			
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="email" id="pcorreo" class="form-control" placeholder="Correo" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+								
+							</tr>
+						
+						</table>
+						
+
+						
+
+						<div class="form-group form-group-feedback form-group-feedback-left">
+							<input type="number" id="pcelular" class="form-control" placeholder="Celular" required>
+							<div class="form-control-feedback">
+								<i class="icon-user-check text-muted"></i>
+							</div>
+							<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+						</div>
+
+						<!--<div class="form-group text-center text-muted content-divider">
+							<span class="px-2">Adicionales</span>
+						</div>-->
+
+						<div class="form-group">
+							<button id="bpadres1" type="button" class="btn bg-blue btn-block"> SIGUIENTE </button>
+						</div>
+						<div class="form-group">
+							<a href="../../index.html"><button type="button" class="btn bg-blue btn-block" > VOLVER </button></a>
+						</div>
+					
+					
+					<!-- /form -->
+
+				</div>
+			</div>
+			<div class="card">
+				<div id="padres2" class="card">
+
+					<!-- Form -->
+					
+						
+						<div class="text-center mb-3">
+							<!--<img src="imagenes/lima2.jpg" class="card-img">-->
+							<h5 class="mb-0">INFORMACIÓN DEL ALUMNO</h5>
+							<span class="d-block text-muted">Llene los campos requeridos</span>
+						</div>
+
+						<div class="form-group text-center text-muted content-divider">
+							<span class="px-2">Datos del alumno</span>
+						</div>
+
+						<table style="width:100%;">
+							<tr style="width:100%;">
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="text" id="pnombresa" class="form-control" placeholder="Nombres" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+			
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="text" id="papellidosa" class="form-control" placeholder="Apellidos" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<input type="text" id="pdireccion" class="form-control" placeholder="Dirección de residencia" required>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+											<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<div id="odistrito"></div>
+											
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+											<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+
+								</td>
+							</tr>
+						</table>
+						
+
+						
+						
+						<div class="form-group text-center text-muted content-divider">
+							<span class="px-2">Datos del colegio</span>
+						</div>
+
+						<table style="width:100%;">
+							<tr style="width:100%;">
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<select id="gradoa" class="form-control select">
+											<option value="0">Grado</option>
+											<option value="P1">1er grado de primaria</option>
+											<option value="P2">2do grado de primaria</option>
+											<option value="P3">3er grado de primaria</option>
+											<option value="P4">4to grado de primaria</option>
+											<option value="P5">5to grado de primaria</option>
+											<option value="P6">6to grado de primaria</option>
+										</select>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<div id="ocolegio"></div>
+										
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+							</tr>
+						</table>
+						<div class="form-group form-group-feedback form-group-feedback-left">
+							
+							<div class="form-control-feedback">
+								<i class="icon-user-check text-muted"></i>
+							</div>
+							<input type="text" id="otrocolegio" class="form-control" placeholder="Otro colegio">
+							<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+						</div>
+						
+						<br><br>
+						<div class="form-group">
+							<button id="bagregar" type="button" class="btn bg-blue btn-block" > GUARDAR ALUMNO </button>
+						</div>
+						<div class="form-group">
+							<button id="bagregar2" type="button" class="btn bg-blue btn-block" > AGREGAR OTRO ALUMNO </button>
+						</div>
+						<div class="form-group">
+							<button id="bpadres2" type="button" class="btn bg-blue btn-block" > SIGUIENTE </button>
+						</div>
+						<div class="form-group">
+							<button id="bvolver2" type="button" class="btn bg-blue btn-block" > VOLVER </button>
+						</div>
+					
+					
+					<!-- /form -->
+
+				</div>
+			</div>
+			<div class="card">
+				<div id="padres3" class="card">
+
+					<!-- Form -->
+					
+						
+						<div class="text-center mb-3">
+							<!--<img src="imagenes/lima2.jpg" class="card-img">-->
+							<h5 class="mb-0">DISPONIBILIDAD DE CLASES</h5>
+							<span class="d-block text-muted">Llene los campos requeridos</span>
+						</div>
+
+						<div class="form-group text-center text-muted content-divider">
+							<span class="px-2">
+								Bienvenido <div id="nombreDelPadre"></div>
+								<br><b>¡Sus datos fueron registrados con éxito!</b>
+							</span>
+						</div>
+						
+						<table style="width:100%;">
+							<tr style="width:100%;">
+								<td colspan="2">
+									<div  style="width:50%;"  class="form-group form-group-feedback form-group-feedback-left">
+										<div id="selectHijo"></div>
+										
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+							</tr>
+							<tr style="width:100%;">
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<div style="margin-left:30px;" >
+											Seleccione el servicio que desea incluir (puede ser más de uno):<br>
+											<input type="checkbox" id="serv1" value="1"> Apoyo con tareas escolares<br>
+											<input type="checkbox" id="serv2" value="2"> Repaso para exámenes/tareas<br>
+											<input type="checkbox" id="serv3" value="3"> Refuerzo de idioma/curso<br>
+											<input type="checkbox" id="serv4" value="4"> Adelanto de idioma/curso<br>
+										</div>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<div style="margin-left:30px;" >
+											Seleccione los cursos que desea incluir (puede ser más de uno):<br>
+											<input type="checkbox" id="cur1" value="1"> Matemática<br>
+											<input type="checkbox" id="cur2" value="2"> Lengua<br>
+											<input type="checkbox" id="cur3" value="3"> Ciencias naturales<br>
+											<input type="checkbox" id="cur4" value="4"> Ciencias sociales<br>
+											<input type="checkbox" id="cur5" value="3"> Inglés<br>
+											<input type="checkbox" id="cur6" value="4"> Francés<br>
+										</div>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+							</tr>
+							<tr style="width:100%;">
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<select id="idioma" class="form-control select">
+											<option value="0">Seleccione el idioma para el servicio</option>
+											<option value="1">Español</option>
+											<option value="2">Inglés</option>
+											<option value="3">Alemán</option>
+											<option value="4">Portugues</option>
+											<option value="5">Italiano</option>
+								
+										</select>
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+								<td style="width:50%;">
+									<div class="form-group form-group-feedback form-group-feedback-left">
+										<div class="form-control-feedback">
+											<i class="icon-user-check text-muted"></i>
+										</div>
+										<input type="text" id="otroidioma" class="form-control" placeholder="Otro idioma">
+										<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+									</div>
+								</td>
+							</tr>
+						</table>
+						
+
+						<center><div style="background-color: brown; width: 50%; height: auto; border-radius: 15px;">
+							<div class="form-group text-center text-muted content-divider">
+								<h1>El precio por hora es: S/ <div style="display:inline-block;" id="precio"></div>.00</h1>
+								
+							</div>
+	
+							<div class="form-group form-group-feedback form-group-feedback-left">
+								<div id="oplan"></div>
+								
+							</div>
+	
+							<div class="form-group">
+								<div class="form-check">
+									<label class="form-check-label">
+										<input onclick="Terminos()" type="checkbox" name="remember" class="form-input-styled" >
+										Acepto los <a href="#">términos y condiciones</a>
+									</label>
+								</div>
+							</div>
+						</div>
+						</center>
+
+						<div class="form-group text-center text-muted content-divider">
+								<span class="px-2">Seleccionar horarios</span>
+						</div>
+						<div class="form-group form-group-feedback form-group-feedback-left">
+							<div style="margin-left: 4%;">
+								<center>
+								<table>
+									<tr >
+										<td style="width:50%;">
+											<div id='calendar'></div>
+											
+										</td>
+										<td >
+											<div id="isugerencias"></div>
+											
+										</td>
+									</tr>
+									
+								</table>
+								<table style="width:90%">
+									<tr style="margin-top:50px; font-size: 20px;">
+										<td>
+											<center>RESUMEN HORARIO ELEGIDO:</center>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div id="resultadoHorario"></div>
+											<div id="resultadoComprobar"></div>
+										</td>
+									</tr>
+								</table>
+								<br>
+								
+									
+							</center>
+							</div>
+							
+							<div class="form-control-feedback">
+								<i class="icon-user-check text-muted"></i>
+							</div>
+							<!--<span class="form-text text-danger"><i class="icon-cancel-circle2 mr-2"></i> This username is already taken</span>-->
+						</div>
+						<!--<button type="submit" class="btn bg-teal-400 btn-block">Continuar <i class="icon-circle-right2 ml-2"></i></button>
+						-->
+						<div class="form-group">
+							<button onclick="GuardaDatosHorario()" type="button" class="btn bg-blue btn-block" > GUARDAR </button>
+						</div>
+						<div class="form-group">
+							<button onclick="AntePenultimo()" type="button" class="btn bg-blue btn-block" > SIGUIENTE </button>
+						</div>
+						
+						<div class="form-group">
+							<button id="bvolver3" type="button" class="btn bg-blue btn-block" > VOLVER </button>
+						</div>
+					
+					
+					<!-- /form -->
+
+				</div>
+			</div>
+			<div class="card">
+				<div id="padres4" class="card">
+					<div class="text-center mb-3">
+						<!--<img src="imagenes/lima2.jpg" class="card-img">-->
+						<h5 class="mb-0">INFORMACIÓN REGISTRADA</h5>
+						<span class="d-block text-muted">Resumen de información</span>
+					</div>
+					<div id="resumenInfo"></div>
+
+					<div class="form-group">
+						<button onclick="Penultimo()" id="bpadres3" type="button" class="btn bg-blue btn-block" > SIGUIENTE </button>
+					</div>
+					
+					<div class="form-group">
+						<button id="bvolver4" type="button" class="btn bg-blue btn-block" > VOLVER </button>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div id="padres5" class="card">
+					<div class="text-center mb-3">
+						<!--<img src="imagenes/lima2.jpg" class="card-img">-->
+						<h5 class="mb-0">CONFIRMACIÓN DE CLASES</h5>
+						<span class="d-block text-muted">Se ha reservado el horario</span>
+					</div>
+
+					<div id="resumenInfo2"></div>
+
+					<div class="form-group">
+						<button onclick="Finalizar()" id="bpadres3" type="button" class="btn bg-blue btn-block" > FINALIZAR </button>
+					</div>
+					
+					<!--<div class="form-group">
+						<button id="bvolver4" type="button" class="btn bg-blue btn-block" > VOLVER </button>
+					</div>-->
+				</div>
+			</div>
+	            <!-- Login form -->
+				<div id="modal_asesores" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-md">
+						<div class="modal-content">
+							<div class="modal-header">
+								
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+							<!-- Form -->
+								<center><h5 class="modal-title">ASESOR</h5></center>
+								<div id="perfilAsesor"></div>
+
+								<div class="form-group text-center text-muted content-divider">
+									<span class="px-2"><h1>HORARIOS</h1></span>
+								</div>
+								<center>
+								<table id="tablas" style="width:80%; margin-left: 20px;">
+									<tr>
+										<td style="border: 1px sandybrown solid;">
+											<center>FECHA
+											<br><div id="lafecha"></div></center>
+										</td>
+										<td style="border: 1px sandybrown solid;">
+											<center>INICIO
+											<br>
+											<select id="inicia" onclick="CambioHora()">
+												<option value="8">08</option>
+												<option value="9">09</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												
+											</select>
+											<select id="iniciaHora" onclick="CambioHora2()">
+												<option value="00">00</option>
+												<option value="30">30</option>
+												
+											</select></center>
+										</td>
+										<td style="border: 1px sandybrown solid;">
+											<center>FINAL
+											<br>
+											<select id="finaliza" onclick="CambioHora2()">
+												<option value="9">09</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												
+											</select>
+											<select id="finalizaHora" onclick="CambioHora2()">
+												<option value="00">00</option>
+												<option value="30">30</option>
+												
+											</select></center>
+										</td>
+										<td style="border: 1px sandybrown solid;">
+											<center>
+												<button id="addhora" onclick="AddHora()" class="btn btn-primary" data-dismiss="modal">AGREGAR</button>
+											</center>
+										</td>
+									</tr>
+									
+									
+								</table>
+								<div id="mensajeSugerencia"></div>
+								</center>
+								
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">CANCELAR</button>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- /login form -->
+
+
+	            
+
+
+	            <!-- Password recovery form -->
+				<div id="modal-recover" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+
+							<!-- Form -->
+							<form class="modal-body" action="index.html">
+								<div class="text-center mb-3">
+									<i class="icon-spinner11 icon-2x text-warning border-warning border-3 rounded-round p-3 mb-3 mt-1"></i>
+									<h5 class="mb-0">Password recovery</h5>
+									<span class="d-block text-muted">We'll send you instructions in email</span>
+								</div>
+
+								<div class="form-group form-group-feedback form-group-feedback-right">
+									<input type="email" class="form-control" placeholder="Your email">
+									<div class="form-control-feedback">
+										<i class="icon-mail5 text-muted"></i>
+									</div>
+								</div>
+
+								<button type="submit" class="btn bg-blue btn-block"><i class="icon-spinner11 mr-2"></i> Reset password</button>
+							</form>
+							<!-- /form -->
+
+						</div>
+					</div>
+				</div>
+				<!-- /password recovery form -->
+	            
+				<!-- /validation form -->
+
+			</div>
+			<!-- /content area -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>

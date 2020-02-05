@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.h_sub {
+    font-weight: 400;
+}
+.admision_section {
+    background-image: url(../images/admision.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+#admisioncarousel{
+    height: 400px;
+}
+.admisionmodal {
+    background-image: url(../images/admisionmodal.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+.bggray {
+    background-color: #f9f9f9;
+}
+.carousel {
+    width: 100%;
+    min-height: 0%;
+}
+.experiencia_educativa {
+    background-image: url(../images/primaria6.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 667px;
+    display: table
+}
+@media screen and (max-width: 991px) {
+    .experiencia_educativa {
+        min-height: 300px;
+        width: 100%;
+    }
+}
+.experiencia_educativa_h {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 35px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+.inscripcion {
+    background-size: cover;
+    background-position: center;
+}
+.inscripcion_linea {
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: 1px 1px #000;
+}
+.visita {
+    background-image: url(../images/visitaguiada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*********** PROPUESTA *************/
+
+.propuestaindex {
+    background-image: url(../images/propuestaindex.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+.propuesta1 {
+    background-image: url(../images/propuesta1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 472px;
+}
+
+/********* colegio ********/
+
+.colegioindex {
+    background-image: url(../images/colegio1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+.mision,
+.vision {}
+.palabrasdirector {
+    background-image: url(../images/director.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 350px;
+    width: 100%;
+}
+
+.compromiso {
+    background-image: url(../images/compromiso.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: table
+}
+
+@media screen and (max-width: 991px) {
+    .compromiso {
+        min-height: 300px;
+        width: 100%;
+    }
+}
+footer{
+    background-color: #286090;
+    color: #fff;
+}
+
+footer a {
+    color: #fff
+}
+
+.propuesta_tabla .col-md-2{
+    height: 300px;
+    color: #fff;
+}
